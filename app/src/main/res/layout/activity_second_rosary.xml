@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rosary22"
+    tools:context=".SecondRosaryActivity">
+
+    <AdapterViewFlipper
+        android:id="@+id/AVF2"
+        android:layout_width="265dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/mary7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/mary8"
+        app:layout_constraintTop_toBottomOf="@+id/mary9" />
+
+    <Button
+        android:id="@+id/father"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginLeft="169dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/glory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mary10" />
+
+    <Button
+        android:id="@+id/mary6"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginRight="220dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/mary5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AVF2" />
+
+    <Button
+        android:id="@+id/mary7"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginEnd="233dp"
+        android:layout_marginRight="233dp"
+        android:layout_marginBottom="75dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/mary4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AVF2" />
+
+    <Button
+        android:id="@+id/mary8"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginEnd="271dp"
+        android:layout_marginRight="271dp"
+        android:layout_marginBottom="10dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/mary7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mary9" />
+
+    <Button
+        android:id="@+id/mary9"
+        android:layout_width="51dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginRight="284dp"
+        android:layout_marginBottom="10dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/mary8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mary10"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginRight="172dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/glory"
+        android:layout_width="65dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="235dp"
+        android:layout_marginLeft="235dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mary10" />
+
+    <Button
+        android:id="@+id/mary5"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginRight="208dp"
+        android:layout_marginBottom="197dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mary4"
+        app:layout_constraintTop_toBottomOf="@+id/mary6" />
+
+    <Button
+        android:id="@+id/mary3"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/mary2"
+        app:layout_constraintEnd_toStartOf="@+id/mary4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mary4" />
+
+    <Button
+        android:id="@+id/mary4"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginRight="225dp"
+        android:layout_marginBottom="82dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/mary2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mary5" />
+
+    <Button
+        android:id="@+id/mary2"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginEnd="246dp"
+        android:layout_marginRight="246dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toTopOf="@+id/mary1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mary3" />
+
+    <Button
+        android:id="@+id/mary1"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginRight="216dp"
+        android:layout_marginBottom="1dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mary2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
