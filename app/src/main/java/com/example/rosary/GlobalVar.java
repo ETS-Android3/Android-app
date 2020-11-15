@@ -16,6 +16,8 @@ public class GlobalVar {
 
     private int index;
 
+    private int count;
+
     public void setIndex(){
         index = 3;
     }
@@ -32,4 +34,15 @@ public class GlobalVar {
         index++;
     }
 
-}
+    public void setCount(){ count = 0; }
+
+    public int getCount(){return count;}
+
+    public void increaseCount() { count++;}
+
+    public void decreaseCount() {count--;}
+
+    public void setCount(int num){count = num;}
+
+
+    }

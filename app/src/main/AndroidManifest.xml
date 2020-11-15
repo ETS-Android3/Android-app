@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Rosary">
-        <activity android:name=".SettingsActivity"></activity>
+        <activity
+            android:name=".Mysteries"
+            android:label="@string/title_activity_mysteries"
+            android:theme="@style/Theme.Rosary.NoActionBar"></activity>
+        <activity android:name=".SettingsActivity" />
         <activity android:name=".InstructionsActivity" />
         <activity android:name=".ThirdRosaryActivity" />
         <activity android:name=".SecondRosaryActivity" />

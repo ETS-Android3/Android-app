@@ -4,193 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rosary33"
+    android:background="@drawable/rosary35"
     tools:context=".ThirdRosaryActivity">
 
+    <Button
+        android:id="@+id/tab5Button"
+        android:layout_width="43dp"
+        android:layout_height="726dp"
+        android:text="Previous"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tab6Button"
+        android:layout_width="43dp"
+        android:layout_height="726dp"
+        android:text="Next"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <AdapterViewFlipper
         android:id="@+id/AVF3"
-        android:layout_width="177dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginEnd="172dp"
-        android:layout_marginRight="172dp"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/maryb10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.631"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="214dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tab5Button"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/hailmary"
-        android:layout_width="42dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="244dp"
-        android:layout_marginLeft="244dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="123dp"
-        android:layout_marginRight="123dp"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/maryb10"
-        android:layout_width="44dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="218dp"
-        android:layout_marginLeft="218dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="149dp"
-        android:layout_marginRight="149dp"
-        android:layout_marginBottom="475dp"
-        app:backgroundTint="@android:color/transparent"
+    <SeekBar
+        android:id="@+id/seekBar3"
+        android:layout_width="234dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="142dp"
+        android:rotation="-90"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AVF3" />
+        app:layout_constraintEnd_toStartOf="@+id/tab6Button" />
 
-    <Button
-        android:id="@+id/maryb9"
-        android:layout_width="44dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="158dp"
-        android:layout_marginLeft="158dp"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="209dp"
-        android:layout_marginRight="209dp"
-        android:layout_marginBottom="120dp"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/maryb6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AVF3" />
 
-    <Button
-        android:id="@+id/maryb8"
-        android:layout_width="44dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="28dp"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/maryb7"
-        app:layout_constraintEnd_toStartOf="@+id/AVF2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AVF3" />
-
-    <Button
-        android:id="@+id/maryb7"
-        android:layout_width="44dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="267dp"
-        android:layout_marginRight="267dp"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maryb8" />
-
-    <Button
-        android:id="@+id/maryb5"
-        android:layout_width="44dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="174dp"
-        android:layout_marginLeft="174dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="193dp"
-        android:layout_marginRight="193dp"
-        android:layout_marginBottom="250dp"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/maryb1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maryb6" />
-
-    <Button
-        android:id="@+id/maryb6"
-        android:layout_width="44dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="174dp"
-        android:layout_marginLeft="174dp"
-        android:layout_marginEnd="193dp"
-        android:layout_marginRight="193dp"
-        android:layout_marginBottom="50dp"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/maryb5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maryb9" />
-
-    <Button
-        android:id="@+id/maryb4"
-        android:layout_width="44dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="130dp"
-        android:layout_marginLeft="130dp"
-        android:layout_marginEnd="237dp"
-        android:layout_marginRight="237dp"
-        android:layout_marginBottom="80dp"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/maryb2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/maryb3"
-        android:layout_width="44dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="77dp"
-        android:layout_marginLeft="77dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="290dp"
-        android:layout_marginRight="290dp"
-        android:layout_marginBottom="10dp"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/maryb2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maryb7" />
-
-    <Button
-        android:id="@+id/maryb2"
-        android:layout_width="44dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="114dp"
-        android:layout_marginLeft="114dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="253dp"
-        android:layout_marginRight="253dp"
-        android:layout_marginBottom="40dp"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toTopOf="@+id/maryb1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maryb3" />
-
-    <Button
-        android:id="@+id/maryb1"
-        android:layout_width="44dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginLeft="148dp"
-        android:layout_marginEnd="219dp"
-        android:layout_marginRight="219dp"
-        android:layout_marginBottom="10dp"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
