@@ -6,9 +6,131 @@
     tools:context=".Glory">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/GTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:text="The Resurrection"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/gmyst1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/gTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:text="The Ascension"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/gmyst2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/gTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="The Descent of the Holy Spirit\n"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/gmyst3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/gTitle4"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:text="The Assumption"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/gmyst4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/gTitle5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="The Crowning of Mary as Queen\n"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/gmyst5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

@@ -11,7 +11,8 @@
         android:layout_gravity="center"
         android:layout_marginTop="2dp"
         android:textColor="#FFF"
-        android:textSize="16sp"/>
+        android:textStyle="bold"
+        android:textSize="18sp"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

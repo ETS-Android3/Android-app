@@ -6,9 +6,131 @@
     tools:context=".Lum">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/LTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:text="The Baptism of Jesus"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/lmyst1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/lTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="The Wedding Feast at Cana\n"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/lmyst2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/lTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="The Proclamation of the Kingdom\n"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/lmyst3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/lTitle4"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:text="The Transfiguration "
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/lmyst4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/lTitle5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="The Institution of the Eucharist\n"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/lmyst5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

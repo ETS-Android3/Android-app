@@ -27,8 +27,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="446dp"
-        android:layout_height="561dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,27 +38,20 @@
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#534040"
+            android:background="#2C2727"
             android:orientation="vertical">
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="101dp"
-                android:background="#000000">
-
-            </FrameLayout>
-
             <TableLayout
-                android:layout_width="501dp"
-                android:layout_height="294dp">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
                     <FrameLayout
-                        android:layout_width="227dp"
-                        android:layout_height="129dp">
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
 
                         <ImageButton
                             android:id="@+id/RosaryButton"
@@ -69,8 +62,8 @@
                     </FrameLayout>
 
                     <FrameLayout
-                        android:layout_width="230dp"
-                        android:layout_height="125dp">
+                        android:layout_width="203dp"
+                        android:layout_height="160dp">
 
                         <ImageButton
                             android:id="@+id/Inst"
@@ -87,24 +80,24 @@
                     android:layout_height="147dp">
 
                     <FrameLayout
-                        android:layout_width="227dp"
-                        android:layout_height="140dp">
+                        android:layout_width="215dp"
+                        android:layout_height="175dp">
 
                         <ImageButton
                             android:id="@+id/mysteryButton"
                             android:layout_width="163dp"
-                            android:layout_height="65dp"
+                            android:layout_height="83dp"
                             android:layout_gravity="center"
                             app:srcCompat="@drawable/rosary_myst" />
                     </FrameLayout>
 
                     <FrameLayout
-                        android:layout_width="217dp"
-                        android:layout_height="match_parent">
+                        android:layout_width="204dp"
+                        android:layout_height="175dp">
 
                         <ImageButton
                             android:id="@+id/SettingButton"
-                            android:layout_width="173dp"
+                            android:layout_width="158dp"
                             android:layout_height="88dp"
                             android:layout_gravity="center"
                             app:srcCompat="@drawable/rosary_setting2" />

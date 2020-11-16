@@ -10,7 +10,7 @@
     <ImageButton
         android:id="@+id/tab1Button"
         android:layout_width="43dp"
-        android:layout_height="726dp"
+        android:layout_height="match_parent"
         app:srcCompat="@drawable/abc_vector_test"
         app:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,21 +19,22 @@
 
     <AdapterViewFlipper
         android:id="@+id/AVF"
-        android:layout_width="267dp"
-        android:layout_height="63dp"
+        android:layout_width="271dp"
+        android:layout_height="84dp"
         android:layout_marginStart="62dp"
         android:layout_marginLeft="62dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="39dp"
         android:layout_marginRight="39dp"
         app:layout_constraintEnd_toStartOf="@+id/tab2Button"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/tab2Button"
         android:layout_width="43dp"
-        android:layout_height="726dp"
+        android:layout_height="match_parent"
         android:rotation="180"
         app:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"

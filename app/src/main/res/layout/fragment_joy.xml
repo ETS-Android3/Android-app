@@ -6,9 +6,135 @@
     tools:context=".Joy">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/JTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:text="The Annunciation"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/jmyst1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/jTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:textSize="35dp"
+                android:text="The Visitation" />
+
+            <TextView
+                android:id="@+id/jmyst2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/jTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:textSize="35dp"
+                android:text="The Nativity" />
+
+            <TextView
+                android:id="@+id/jmyst3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/jTitle4"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:textSize="35dp"
+                android:text="The Presentation" />
+
+            <TextView
+                android:id="@+id/jmyst4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/jTitle5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="35dp"
+                android:text="The Finding of the Child Jesus in the Temple\n" />
+
+            <TextView
+                android:id="@+id/jmyst5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:layout_marginLeft="3dp"
+                android:paddingLeft="3dp"
+                android:layout_gravity="center"
+                android:text="TextView"
+                android:textSize="22dp"/>
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

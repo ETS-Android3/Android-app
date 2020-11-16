@@ -7,30 +7,31 @@
     android:background="@drawable/rosary35"
     tools:context=".ThirdRosaryActivity">
 
-    <Button
+    <ImageButton
         android:id="@+id/tab5Button"
         android:layout_width="43dp"
-        android:layout_height="726dp"
-        android:text="Previous"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/abc_vector_test"
         app:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <ImageButton
         android:id="@+id/tab6Button"
         android:layout_width="43dp"
-        android:layout_height="726dp"
-        android:text="Next"
+        android:layout_height="match_parent"
+        android:rotation="180"
         app:backgroundTint="@android:color/transparent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/abc_vector_test" />
 
     <AdapterViewFlipper
         android:id="@+id/AVF3"
-        android:layout_width="214dp"
-        android:layout_height="57dp"
+        android:layout_width="212dp"
+        android:layout_height="85dp"
         android:layout_marginStart="12dp"
         android:layout_marginLeft="12dp"
         android:layout_marginTop="16dp"

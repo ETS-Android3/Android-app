@@ -43,10 +43,10 @@ public class Mysteries extends AppCompatActivity {
 
     private void setupWithViewPager(ViewPager viewPager){
         SectionsPagerAdapter adapter = new SectionsPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Joy(), "Joy");
-        adapter.addFragment(new Sorrow(), "Sorrow");
-        adapter.addFragment(new Glory(), "Glorry");
-        adapter.addFragment(new Lum(), "Lum");
+        adapter.addFragment(new Joy(), "Joyful");
+        adapter.addFragment(new Sorrow(), "Sorrow-\nful");
+        adapter.addFragment(new Glory(), "Glorious");
+        adapter.addFragment(new Lum(), "Luminous");
 
         viewPager.setAdapter(adapter);
     }

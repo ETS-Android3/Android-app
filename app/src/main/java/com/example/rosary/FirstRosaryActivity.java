@@ -50,8 +50,8 @@ public class FirstRosaryActivity extends AppCompatActivity {
         if(speedString.equals("Fast"))
             speed = 3000;
         else if(speedString.equals("Slow"))
-            speed = 5000;
-        else speed = 4000;
+            speed = 4000;
+        else speed = 3500;
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -115,10 +115,7 @@ public class FirstRosaryActivity extends AppCompatActivity {
             case MotionEvent.ACTION_POINTER_UP:
             case MotionEvent.ACTION_CANCEL:
             case MotionEvent.ACTION_UP:
-                if(AVF.getChildCount() < 3)
-                    AVF.showNext();
-                else
-                    AVF.showPrevious();
+                AVF.setDisplayedChild(1);
                 AVF.stopFlipping();
                 AVF.removeAllViewsInLayout();
                 break;

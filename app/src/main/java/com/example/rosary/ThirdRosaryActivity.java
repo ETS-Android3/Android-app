@@ -10,6 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterViewFlipper;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.SeekBar;
 
 public class ThirdRosaryActivity extends AppCompatActivity {
@@ -37,13 +38,13 @@ public class ThirdRosaryActivity extends AppCompatActivity {
         if(speedString.equals("Fast"))
             speed = 3000;
         else if(speedString.equals("Slow"))
-            speed = 5000;
-        else speed = 4000;
+            speed = 4000;
+        else speed = 3500;
 
-        Button Tab1 = (Button) findViewById(R.id.tab5Button);
+        ImageButton Tab1 = (ImageButton) findViewById(R.id.tab5Button);
         Tab1.setOnClickListener(this::onClick);
 
-        Button Tab2 = (Button) findViewById(R.id.tab6Button);
+        ImageButton Tab2 = (ImageButton) findViewById(R.id.tab6Button);
         Tab2.setOnClickListener(this::onClick);
 
         seekBar = (SeekBar) findViewById(R.id.seekBar3);
@@ -69,9 +70,8 @@ public class ThirdRosaryActivity extends AppCompatActivity {
 
         customAdapter = new CustomAdapter(getApplicationContext(), arr);
         AVF.setAdapter(customAdapter);
-        AVF.setFlipInterval(3000);
-        AVF.setAutoStart(true);
-        //AVF.stopFlipping();
+
+
     }
 
     private void onClick(View v){
@@ -106,10 +106,7 @@ public class ThirdRosaryActivity extends AppCompatActivity {
             case MotionEvent.ACTION_POINTER_UP:
             case MotionEvent.ACTION_CANCEL:
             case MotionEvent.ACTION_UP:
-                if(AVF.getChildCount() < 3)
-                    AVF.showNext();
-                else
-                    AVF.showPrevious();
+                AVF.setDisplayedChild(1);
                 AVF.stopFlipping();
                 AVF.removeAllViewsInLayout();
                 break;
