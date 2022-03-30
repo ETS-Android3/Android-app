@@ -11,10 +11,10 @@ import android.view.VelocityTracker;
 import android.widget.AdapterViewFlipper;
 import android.widget.SeekBar;
 
-public class SecondRosaryActivity extends AppCompatActivity {
+public class BeginRosaryActivity extends AppCompatActivity {
 
     public String[] arr =  {};
-    private AdapterViewFlipper AVF;
+   private AdapterViewFlipper AVF;
     CustomAdapter customAdapter;
     private SeekBar seekBar;
     private SharedPreferences pref;
@@ -24,13 +24,17 @@ public class SecondRosaryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second_rosary);
+        setContentView(R.layout.activity_begin_rosary);
 
         pref = PreferenceManager.getDefaultSharedPreferences(this);
 
         AVF = (AdapterViewFlipper) findViewById(R.id.AVF);
 
         GlobalVar.getInstance().setCount();
+
+        seekBar = (SeekBar) findViewById(R.id.seekBar);
+        seekBar.setMax(7);
+        seekBar.setProgress(0);
 
         String speedString = pref.getString("save_speed", "Normal");
 
@@ -39,10 +43,6 @@ public class SecondRosaryActivity extends AppCompatActivity {
         else if(speedString.equals("Slow"))
             speed = 4000;
         else speed = 3500;
-
-        seekBar = (SeekBar) findViewById(R.id.seekBar);
-        seekBar.setMax(12);
-        seekBar.setProgress(0);
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -61,38 +61,27 @@ public class SecondRosaryActivity extends AppCompatActivity {
             }
         });
 
+
         customAdapter = new CustomAdapter(getApplicationContext(), arr);
         AVF.setAdapter(customAdapter);
 
+        GlobalVar.getInstance().setIndex();
+
     }
 
-    private void viewChange(int viewUpdate){
+    private void viewChange(int viewUpdate) {
         if(viewUpdate == 0){
-            if(GlobalVar.getInstance().getIndex() == 2 ) {
-                GlobalVar.getInstance().decreaseIndex();
-                Intent i = new Intent(SecondRosaryActivity.this, FirstRosaryActivity.class);
-                startActivity(i);
-            }
-            else{
-                GlobalVar.getInstance().decreaseIndex();
-                Intent i = new Intent(SecondRosaryActivity.this, SecondRosaryActivity.class);
-                startActivity(i);
-            }
+            Intent i = new Intent(BeginRosaryActivity.this, MainActivity.class);
+            startActivity(i);
         }
         else {
-            if(GlobalVar.getInstance().getIndex() >= 5) {
-                GlobalVar.getInstance().increaseIndex();
-                Intent i = new Intent(SecondRosaryActivity.this, ThirdRosaryActivity.class);
-                startActivity(i);
-            }
-            else {
-                GlobalVar.getInstance().increaseIndex();
-                Intent i = new Intent(SecondRosaryActivity.this, SecondRosaryActivity.class);
-                startActivity(i);
-            }
+            GlobalVar.getInstance().increaseIndex();
+            Intent i = new Intent(BeginRosaryActivity.this, FirstRosaryActivity.class);
+            startActivity(i);
         }
     }
 
+   // WorkerThread workerThread;
 
     public boolean onTouchEvent(MotionEvent event){
 
@@ -145,7 +134,6 @@ public class SecondRosaryActivity extends AppCompatActivity {
         return false;
     }
 
-
     public void PrayNow(String [] arr){
 
         String title = pref.getString("saved_title", "false");
@@ -154,23 +142,31 @@ public class SecondRosaryActivity extends AppCompatActivity {
         Prayer pray = new Prayer();
 
         if (GlobalVar.getInstance().getCount() == 0) {
+            arr = pray.getApostle(language, title);
+            GlobalVar.getInstance().increaseCount();
+            seekBar.incrementProgressBy(1);
+        } else if(GlobalVar.getInstance().getCount() == 1){
             arr = pray.getOurFather(language, title);
             GlobalVar.getInstance().increaseCount();
             seekBar.incrementProgressBy(1);
-        } else if (GlobalVar.getInstance().getCount() > 0 && GlobalVar.getInstance().getCount() < 11) {
+        } else if (GlobalVar.getInstance().getCount() > 1 && GlobalVar.getInstance().getCount() < 5) {
             arr = pray.getMary(language, title);
             GlobalVar.getInstance().increaseCount();
             seekBar.incrementProgressBy(1);
-        } else if (GlobalVar.getInstance().getCount() == 11) {
-            arr = pray.getGlory(language, title);
+        } else if (GlobalVar.getInstance().getCount() == 5) {
+            arr = pray.getGlory(language,title);
             GlobalVar.getInstance().increaseCount();
             seekBar.incrementProgressBy(1);
-        } else return;
+        } else if (GlobalVar.getInstance().getCount() == 6) {
+            arr = pray.getOurFather(language, title);
+            GlobalVar.getInstance().increaseCount();
+            seekBar.incrementProgressBy(1);
+        }
+        else return;
 
         customAdapter = new CustomAdapter(getApplicationContext(), arr);
         AVF.setAdapter(customAdapter);
 
     }
-
 
 }

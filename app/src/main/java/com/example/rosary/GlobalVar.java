@@ -14,12 +14,14 @@ public class GlobalVar {
     private GlobalVar() {
     }
 
-    private int index;
+    private int index = -1;
 
     private int count;
 
+    private String mystery;
+
     public void setIndex(){
-        index = 3;
+        index = 0;
     }
 
     public int getIndex(){
@@ -44,5 +46,7 @@ public class GlobalVar {
 
     public void setCount(int num){count = num;}
 
+    public void setMystery(String mystery) {this.mystery = mystery;}
 
+    public String getMystery() {return mystery;}
     }

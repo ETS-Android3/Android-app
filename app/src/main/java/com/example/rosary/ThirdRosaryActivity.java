@@ -7,9 +7,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.VelocityTracker;
 import android.view.View;
 import android.widget.AdapterViewFlipper;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.SeekBar;
 
@@ -21,6 +21,7 @@ public class ThirdRosaryActivity extends AppCompatActivity {
     private SeekBar seekBar;
     private SharedPreferences pref;
     private int speed;
+    private VelocityTracker mVelocityTracker = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +30,7 @@ public class ThirdRosaryActivity extends AppCompatActivity {
 
         pref = PreferenceManager.getDefaultSharedPreferences(this);
 
-        AVF = (AdapterViewFlipper) findViewById(R.id.AVF3);
+        AVF = (AdapterViewFlipper) findViewById(R.id.AVF);
 
         GlobalVar.getInstance().setCount();
 
@@ -41,13 +42,7 @@ public class ThirdRosaryActivity extends AppCompatActivity {
             speed = 4000;
         else speed = 3500;
 
-        ImageButton Tab1 = (ImageButton) findViewById(R.id.tab5Button);
-        Tab1.setOnClickListener(this::onClick);
-
-        ImageButton Tab2 = (ImageButton) findViewById(R.id.tab6Button);
-        Tab2.setOnClickListener(this::onClick);
-
-        seekBar = (SeekBar) findViewById(R.id.seekBar3);
+        seekBar = (SeekBar) findViewById(R.id.seekBar);
         seekBar.setMax(12);
         seekBar.setProgress(0);
 
@@ -74,12 +69,14 @@ public class ThirdRosaryActivity extends AppCompatActivity {
 
     }
 
-    private void onClick(View v){
-        if(v.getId() == R.id.tab5Button){
+    private void viewChange(int viewUpdate) {
+        if(viewUpdate == 0){
+            GlobalVar.getInstance().decreaseIndex();
             Intent i = new Intent(ThirdRosaryActivity.this, SecondRosaryActivity.class);
             startActivity(i);
         }
-        else if(v.getId() == R.id.tab6Button){
+        else {
+            GlobalVar.getInstance().setIndex();
             Intent i = new Intent(ThirdRosaryActivity.this, MainActivity.class);
             startActivity(i);
         }
@@ -90,9 +87,19 @@ public class ThirdRosaryActivity extends AppCompatActivity {
         String title = pref.getString("saved_title", "false");
 
         int action = event.getAction();
+        float y1 = 0;
+        float y2 = 0;
+        float diffY = 0;
 
         switch(action){
             case MotionEvent.ACTION_DOWN:
+                if (mVelocityTracker == null) {
+                    mVelocityTracker = VelocityTracker.obtain();
+                } else {
+                    mVelocityTracker.clear();
+                }
+                mVelocityTracker.addMovement(event);
+                y1 = event.getY();
                 PrayNow(arr);
                 AVF.setFlipInterval(speed);
                 AVF.setAutoStart(true);
@@ -102,13 +109,25 @@ public class ThirdRosaryActivity extends AppCompatActivity {
                     AVF.startFlipping();
                 break;
             case MotionEvent.ACTION_MOVE:
+                mVelocityTracker.addMovement(event);
+                mVelocityTracker.computeCurrentVelocity(1000);
                 break;
             case MotionEvent.ACTION_POINTER_UP:
             case MotionEvent.ACTION_CANCEL:
             case MotionEvent.ACTION_UP:
+                y2 = event.getY();
                 AVF.setDisplayedChild(1);
                 AVF.stopFlipping();
                 AVF.removeAllViewsInLayout();
+                diffY = y2 - y1;
+                if (Math.abs(diffY) > 1000 && Math.abs(mVelocityTracker.getYVelocity()) > 300) {
+                    String d = String.valueOf(mVelocityTracker.getYVelocity());
+                    if (mVelocityTracker.getYVelocity() > 0) {
+                        viewChange(1);
+                    } else {
+                        viewChange(0);
+                    }
+                }
                 break;
         }
         return false;

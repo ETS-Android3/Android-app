@@ -14,9 +14,9 @@
             android:label="@string/title_activity_mysteries"
             android:theme="@style/Theme.Rosary.NoActionBar"></activity>
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".InstructionsActivity" />
         <activity android:name=".ThirdRosaryActivity" />
         <activity android:name=".SecondRosaryActivity" />
+        <activity android:name=".BeginRosaryActivity" />
         <activity android:name=".FirstRosaryActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

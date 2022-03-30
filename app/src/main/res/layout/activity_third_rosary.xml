@@ -4,48 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/rosary35"
     tools:context=".ThirdRosaryActivity">
 
-    <ImageButton
-        android:id="@+id/tab5Button"
-        android:layout_width="43dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/abc_vector_test"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/tab6Button"
-        android:layout_width="43dp"
-        android:layout_height="match_parent"
-        android:rotation="180"
-        app:backgroundTint="@android:color/transparent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/abc_vector_test" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:background="#70978551">
 
-    <AdapterViewFlipper
-        android:id="@+id/AVF3"
-        android:layout_width="212dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/tab5Button"
-        app:layout_constraintTop_toTopOf="parent" />
+            <AdapterViewFlipper
+                android:id="@+id/AVF"
+                android:layout_width="271dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="62dp"
+                android:layout_marginLeft="62dp">
 
-    <SeekBar
-        android:id="@+id/seekBar3"
-        android:layout_width="234dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="142dp"
-        android:rotation="-90"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tab6Button" />
+            </AdapterViewFlipper>
+        </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="608dp">
 
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/rosary3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="321dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="392dp" />
+        </TableRow>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
