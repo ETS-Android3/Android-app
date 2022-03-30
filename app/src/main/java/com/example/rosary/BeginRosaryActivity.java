@@ -20,6 +20,7 @@ public class BeginRosaryActivity extends AppCompatActivity {
     private SharedPreferences pref;
     private int speed;
     private VelocityTracker mVelocityTracker = null;
+    private String title, language, fatima;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,17 +33,29 @@ public class BeginRosaryActivity extends AppCompatActivity {
 
         GlobalVar.getInstance().setCount();
 
-        seekBar = (SeekBar) findViewById(R.id.seekBar);
-        seekBar.setMax(7);
-        seekBar.setProgress(0);
-
         String speedString = pref.getString("save_speed", "Normal");
+
+        title = pref.getString("saved_title", "false");
+        language = pref.getString("saved_language", "English");
+        fatima = pref.getString("saved_fatima", "false");
+
+        if(speedString.equals("Fast"))
+            speed = 3000;
+        else if(speedString.equals("Slow"))
+            speed = 5000;
+        else if(speedString.equals("VSlow"))
+            speed = 6000;
+        else speed = 3800;
 
         if(speedString.equals("Fast"))
             speed = 3000;
         else if(speedString.equals("Slow"))
             speed = 4000;
         else speed = 3500;
+
+        seekBar = (SeekBar) findViewById(R.id.seekBar);
+        seekBar.setMax(7);
+        seekBar.setProgress(0);
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override

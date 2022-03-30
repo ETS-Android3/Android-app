@@ -20,6 +20,7 @@ public class SecondRosaryActivity extends AppCompatActivity {
     private SharedPreferences pref;
     private int speed;
     private VelocityTracker mVelocityTracker = null;
+    private String title, language, fatima;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,16 +33,25 @@ public class SecondRosaryActivity extends AppCompatActivity {
 
         GlobalVar.getInstance().setCount();
 
-        String speedString = pref.getString("save_speed", "Normal");
+        String speedString = pref.getString("saved_speed", "Normal");
+
+        title = pref.getString("saved_title", "false");
+        language = pref.getString("saved_language", "English");
+        fatima = pref.getString("saved_fatima", "false");
 
         if(speedString.equals("Fast"))
             speed = 3000;
         else if(speedString.equals("Slow"))
-            speed = 4000;
-        else speed = 3500;
+            speed = 5000;
+        else if(speedString.equals("VSlow"))
+            speed = 6000;
+        else speed = 3800;
 
         seekBar = (SeekBar) findViewById(R.id.seekBar);
-        seekBar.setMax(12);
+        if(fatima.equals("false"))
+            seekBar.setMax(12);
+        else
+            seekBar.setMax(13);
         seekBar.setProgress(0);
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -148,9 +158,6 @@ public class SecondRosaryActivity extends AppCompatActivity {
 
     public void PrayNow(String [] arr){
 
-        String title = pref.getString("saved_title", "false");
-        String language = pref.getString("saved_language", "English");
-
         Prayer pray = new Prayer();
 
         if (GlobalVar.getInstance().getCount() == 0) {
@@ -163,6 +170,10 @@ public class SecondRosaryActivity extends AppCompatActivity {
             seekBar.incrementProgressBy(1);
         } else if (GlobalVar.getInstance().getCount() == 11) {
             arr = pray.getGlory(language, title);
+            GlobalVar.getInstance().increaseCount();
+            seekBar.incrementProgressBy(1);
+        } else if (!fatima.equals("false") && GlobalVar.getInstance().getCount() == 12) {
+            arr = pray.getOurFatimaPrayer(language, title);
             GlobalVar.getInstance().increaseCount();
             seekBar.incrementProgressBy(1);
         } else return;
