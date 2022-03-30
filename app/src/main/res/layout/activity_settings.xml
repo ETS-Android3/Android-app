@@ -59,7 +59,48 @@
                 android:layout_weight="1">
 
                 <Switch
-                    android:id="@+id/switch4"
+                    android:id="@+id/switchPray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="193dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewN"
+                    android:layout_width="match_parent"
+                    android:layout_height="103dp"
+                    android:layout_weight="1"
+                    android:text="Fatima Prayer"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/textViewR"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:layout_weight="1"
+                    android:text="Display the fatima prayer in the rosary" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="142dp"
+                android:layout_height="64dp"
+                android:layout_weight="1">
+
+                <Switch
+                    android:id="@+id/switchFatima"
                     android:layout_width="wrap_content"
                     android:layout_height="14dp"
                     android:layout_gravity="center"

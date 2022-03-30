@@ -30,20 +30,24 @@
 
     <AdapterViewFlipper
         android:id="@+id/AVF3"
-        android:layout_width="212dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="315dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintStart_toEndOf="@+id/tab5Button"
         app:layout_constraintTop_toTopOf="parent" />
 
     <SeekBar
         android:id="@+id/seekBar3"
-        android:layout_width="234dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="142dp"
+        android:layout_width="170dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="180dp"
         android:rotation="-90"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:thumbTint="#FFF"
+        android:progressTint="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tab6Button" />
 

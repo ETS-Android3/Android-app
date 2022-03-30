@@ -19,16 +19,10 @@
 
     <AdapterViewFlipper
         android:id="@+id/AVF"
-        android:layout_width="271dp"
-        android:layout_height="84dp"
-        android:layout_marginStart="62dp"
-        android:layout_marginLeft="62dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginRight="39dp"
-        app:layout_constraintEnd_toStartOf="@+id/tab2Button"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="304dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/tab1Button"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
@@ -44,12 +38,16 @@
 
     <SeekBar
         android:id="@+id/seekBar"
-        android:layout_width="148dp"
-        android:layout_height="39dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:layout_marginBottom="392dp"
-        android:rotation="-91"
+        android:layout_width="124dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="-20dp"
+        android:layout_marginRight="-20dp"
+        android:layout_marginBottom="90dp"
+        android:progressTint="#FFF"
+        android:rotation="-90"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:thumbTint="#FFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tab2Button" />
 

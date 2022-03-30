@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Rosary</string>
+    <string name="app_name">The Rosary</string>
     <string name="title_activity_rosary">RosaryActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -29,6 +29,7 @@
     <string name="saved_language">English</string>
     <string name="saved_speed">Normal</string>
     <string name="saved_title">false</string>
+    <string name="saved_fatima">false</string>
     <string name="title_activity_mysteries">Mysteries</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
