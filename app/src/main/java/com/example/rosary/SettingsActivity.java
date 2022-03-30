@@ -1,10 +1,8 @@
-package com.app.rosary;
+package com.example.rosary;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;
 
-import android.app.ActionBar;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -15,8 +13,6 @@ import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.PopupMenu;
 import android.widget.Switch;
-import android.widget.Toast;
-import android.widget.Toolbar;
 
 public class SettingsActivity extends AppCompatActivity implements PopupMenu.OnMenuItemClickListener {
 

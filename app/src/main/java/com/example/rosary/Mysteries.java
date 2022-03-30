@@ -1,4 +1,4 @@
-package com.app.rosary;
+package com.example.rosary;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,8 +8,6 @@ import com.google.android.material.tabs.TabLayout;
 import androidx.viewpager.widget.ViewPager;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;

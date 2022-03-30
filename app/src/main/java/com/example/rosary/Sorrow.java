@@ -1,4 +1,4 @@
-package com.app.rosary;
+package com.example.rosary;
 
 import android.os.Bundle;
 
