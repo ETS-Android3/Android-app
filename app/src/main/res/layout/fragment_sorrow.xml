@@ -22,9 +22,9 @@
             <TextView
                 android:id="@+id/STitle1"
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="The Agony in the Garden"
+                android:text="The Agony in the Garden\n"
                 android:textSize="35dp" />
 
             <TextView
@@ -45,9 +45,9 @@
             <TextView
                 android:id="@+id/sTitle2"
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="The Scourging at the Pillar"
+                android:text="The Scourging at the Pillar\n"
                 android:textSize="35dp" />
 
             <TextView
@@ -68,10 +68,10 @@
             <TextView
                 android:id="@+id/sTitle3"
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textSize="35dp"
-                android:text="The Crowning of Thorns" />
+                android:text="The Crowning of Thorns\n" />
 
             <TextView
                 android:id="@+id/smyst3"
@@ -91,10 +91,10 @@
             <TextView
                 android:id="@+id/sTitle4"
                 android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:textSize="35dp"
-                android:text="The Carrying of the Cross" />
+                android:text="The Carrying of the Cross\n" />
 
             <TextView
                 android:id="@+id/smyst4"
