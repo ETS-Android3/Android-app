@@ -1,4 +1,4 @@
-package com.example.rosary;
+package com.app.rosary;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

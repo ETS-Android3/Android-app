@@ -1,4 +1,4 @@
-package com.example.rosary;
+package com.app.rosary;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.PopupMenu;
-
 
 public class Mysteries extends AppCompatActivity {
 

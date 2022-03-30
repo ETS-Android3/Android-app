@@ -1,4 +1,4 @@
-package com.example.rosary;
+package com.app.rosary;
 
 
 public class GlobalVar {

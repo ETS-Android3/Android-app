@@ -1,4 +1,4 @@
-package com.example.rosary;
+package com.app.rosary;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.preference.PreferenceManager;

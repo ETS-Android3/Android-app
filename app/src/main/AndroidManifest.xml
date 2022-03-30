@@ -16,8 +16,8 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ThirdRosaryActivity" />
         <activity android:name=".SecondRosaryActivity" />
-        <activity android:name=".BeginRosaryActivity" />
         <activity android:name=".FirstRosaryActivity" />
+        <activity android:name=".BeginRosaryActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
